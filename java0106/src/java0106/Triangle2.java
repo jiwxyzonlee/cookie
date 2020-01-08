@@ -2,7 +2,7 @@ package java0106;
 
 import java.util.Scanner;
 
-public class Triangle2 {
+public class Triangle2 { // 미완성!
 
 	public static void main(String[] args) {
 		// 입력값 변수 생성
