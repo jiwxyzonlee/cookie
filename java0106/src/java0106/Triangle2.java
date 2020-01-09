@@ -24,6 +24,7 @@ public class Triangle2 { // 미완성!
 				System.out.print(2*i - 1);
 			}
 			
+			
 			// 피라미드 속 공백과 두번째 사선
 			right_wing :
 				for (int k = 1; k < line - 2; k = k + 1) {
