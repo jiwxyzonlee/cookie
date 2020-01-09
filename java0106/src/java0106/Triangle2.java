@@ -20,23 +20,25 @@ public class Triangle2 { // 미완성!
 				System.out.print(i);
 			}
 			// 첫번째 사선 (홀수)
-			if (i != 0 && i != line - 1) {
+			else if (i != line - 1) {
 				System.out.print(2*i - 1);
 			}
 			
 			// 피라미드 속 공백과 두번째 사선
-			for (int k = 1; k < line - 2; k = k + 1) {;
-				for (int l = 0; l < 2*i - 1; l = l + 1) {
-					// 피라미드 속 공백
-					if (i != 0 && i != line - 1) {
-						System.out.print(" ");
+			right_wing :
+				for (int k = 1; k < line - 2; k = k + 1) {
+					for (int l = 0; l < 2*i - 1; l = l + 1) {
+						// 피라미드 속 공백
+						if (i != 0 && i != line - 1) {
+							System.out.print(" ");
+						}
 					}
-				}
-				// 두번째 사선 (짝수)
-				if (i !=0 && i != line - 1) {
-					System.out.print(2*i);
-				}
-			}
+					// 두번째 사선 (짝수)
+					if (i !=0 && i != line - 1) {
+						System.out.print(2*i);
+						break right_wing;
+					}
+				} 
 			
 			System.out.print('\n');
 		}		
@@ -44,4 +46,4 @@ public class Triangle2 { // 미완성!
 	}
 
 }
-		 
+	 
