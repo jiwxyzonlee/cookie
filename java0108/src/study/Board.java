@@ -51,9 +51,9 @@ public class Board {
 	// toString()을 호출해서 한번에 확인
 	@Override
 	public String toString() {
-		return "Board [num=" + num + 
-				", title=" + title + 
-				", content=" + content + "]";
+		return "Board [num = " + num + 
+				", title = " + title + 
+				", content = " + content + "]";
 	}
 
 }
