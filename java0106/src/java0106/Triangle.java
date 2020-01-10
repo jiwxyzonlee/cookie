@@ -29,7 +29,6 @@ public class Triangle { // 끝!
 			// 작업이 독립적인 경우 위에서 사용한 변수를 다시 명시해도 에러가 나지 않는다
 			else {
 				for (int j = 2*(i+1) - 3; j < 4*i; j = j + 1 ) {
-					j = j % 10;
 					int bottom = j % 10;
 					System.out.print(bottom);
 				}
