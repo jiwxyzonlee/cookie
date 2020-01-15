@@ -8,6 +8,7 @@ public class StringTest {
 		// String은 자신의 데이터를 수정할 일이 없기 때문에
 		// 메소드를 호출하거나 '+'(더하기) 연산하여 결과를 리턴
 		// 원본에는 변화가 생기지 않음
+		
 		String result = str + "Java";
 		str.toUpperCase();
 		System.out.println(str);

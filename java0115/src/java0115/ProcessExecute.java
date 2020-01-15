@@ -18,7 +18,7 @@ public class ProcessExecute {
 		System.out.println("r1 : " + System.identityHashCode(r1));
 		System.out.println("r1 : " + System.identityHashCode(r2));
 		
-		// 메모장 실행 (큰따옴표 속 띄어쓰기 조심)
+		// 메모장 실행 (큰따옴표 속 띄어쓰기 조심!)
 		try {
 			r1.exec("notepad.exe "
 					+ "C:\\Users\\admin\\Documents\\java\\200110\\0110.txt");

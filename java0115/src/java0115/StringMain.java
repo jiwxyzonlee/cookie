@@ -11,6 +11,7 @@ public class StringMain {
 		
 		// split을 이용해서 해결
 		// '/'로 분할한 후 가장 마지막 데이터 출력
+		
 		//int a = requestURI.indexOf("login");
 		//System.out.println(a);
 		System.out.println();

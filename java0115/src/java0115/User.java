@@ -34,7 +34,7 @@ public class User implements Comparable<User> {
 	
 	@Override
 	public int compareTo(User o) {
-		return this.name.compareTo(o.name); // 내림차순할 시 *-1 ;
+		return this.name.compareTo(o.name); // 내림차순 할 시 *-1 ;
 
 	}
 	

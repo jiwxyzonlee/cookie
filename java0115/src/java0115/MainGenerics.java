@@ -5,6 +5,7 @@ public class MainGenerics {
 	public static void main(String[] args) {
 		// 미지정 자료형 1개를 갖는 클래스의 인스턴스 만들기
 		Integer [] ar = {100, 200, 300};
+		
 		// 클래스를 만들 때 사용한 E가 Integer로 치환되어 동작
 		Generics <Integer> obj1 = new Generics<Integer>(ar);
 		// Generics는 int 사용 불가

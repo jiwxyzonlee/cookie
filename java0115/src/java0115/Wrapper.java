@@ -7,7 +7,8 @@ public class Wrapper {
 	public static void main(String[] args) {
 		// 기본형 정수 데이터를 참조형 Integer로 생성
 		Integer i = new Integer(100);
-		i = 300; // AutoBoxing
+		i = 300;
+		// AutoBoxing
 		// : 기본형데이터를 참조형으로 자동 변환해주는 문법
 		
 		// 기본형을 참조형으로 표현할 수 있기 때문에 

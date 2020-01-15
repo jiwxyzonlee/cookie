@@ -134,7 +134,6 @@ public class ArraysTest {
 		
 		Arrays.sort(users, comp);
 		
-		
 		// 데이터 출력
 		for(User user : users) {
 			System.out.println(user);

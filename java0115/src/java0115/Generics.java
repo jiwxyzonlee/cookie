@@ -2,7 +2,7 @@ package java0115;
 
 // Generics를 적용한 클래스
 public class Generics <E> {
-	// 미지정 자료형 배열 E
+	// 미지정 자료형 배열 E 선언
 	private E [] data;
 	
 	// 생성자
