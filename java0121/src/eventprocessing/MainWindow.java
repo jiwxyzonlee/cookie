@@ -4,7 +4,9 @@ public class MainWindow {
 
 	public static void main(String[] args) {
 		//new MyWindow();
-		new keyWindow();
+		//new keyWindow();
+		
+		new MyFrame();
 
 	}
 

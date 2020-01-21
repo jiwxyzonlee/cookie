@@ -4,6 +4,9 @@ import java.awt.Frame;
 import java.awt.Label;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 
 public class keyWindow extends Frame {
 	
@@ -46,6 +49,16 @@ public class keyWindow extends Frame {
 			public void keyPressed(KeyEvent arg0) {
 				// 조합키 확인
 				int modifiers = arg0.getModifiers();
+				// control + X 이면 종료
+				// control 키가 눌러졌는지 확인
+				if ((modifiers & 2)!= 0) {
+					// 별도로 누른 키가 X인지 확인
+					// 대소문자 구분하고 싶다면 getKeyChar() 사용
+					int key = arg0.getKeyCode();
+					if ( key == KeyEvent.VK_X) {
+						System.exit(0);
+					}
+				}
 				System.out.println(modifiers);
 				
 				//System.out.println("아무 키나 누르면 호출됩니다.");
@@ -101,6 +114,22 @@ public class keyWindow extends Frame {
 		setLocation(100, 100);
 		setSize(400, 400);
 		setVisible(true);
+		
+		WindowAdapter windowListener = new WindowAdapter() {
+			// Listener는 인터페이스이기 때문에 메소드 하나라도 지우면 에러 뜸
+			// Listener는 인터페이스라서 모든 메소드를 구현해야 하지만
+			// Adapter는 추상클래스라서 추상메소드와 필요한 메소드만 구현하면 됨
+			// 종료 버튼을 누를 때 호출되는 메소드
+			@Override
+			public void windowClosing(WindowEvent e) {
+				// 프로그램 종료
+				System.exit(0);
+				
+			}
+			
+		};
+		// 윈도우 이벤트 연결
+		this.addWindowListener(windowListener);
 	}
 
 }
