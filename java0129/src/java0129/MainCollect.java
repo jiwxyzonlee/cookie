@@ -10,6 +10,7 @@ import java.util.stream.Stream;
 public class MainCollect {
 
 	public static void main(String[] args) {
+		// 집계함수를 사용
 		// 샘플 데이터 작성
 		Student student1 = new Student(1, "김가나", "남", 28, 93);
 		Student student2 = new Student(2, "유다라", "여", 19, 89);
